@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex-center">
+    <div class="shapes-container">
+        <div class="shapes triangles">
+            <div class="shape triangle" id="triangle1"></div>
+            <div class="shape triangle" id="triangle2"></div>
+            <div class="shape triangle" id="triangle3"></div>
+            <div class="shape triangle blur" id="triangle4"></div>
+            <div class="shape triangle blur" id="triangle5"></div>
+        </div>
+        <div class="shapes circles">
+            <div class="shape circle" id="circle1"></div>
+            <div class="shape circle" id="circle2"></div>
+            <div class="shape circle" id="circle3"></div>
+        </div>
+    </div>
+
+    <div class="boxes-container flex-center">
+
+        <div id="box-one" class="box">
+            <h4>Verify your email address</h4>
+            <p class="instructions">We emailed you a four-digit code to arthur@email.com. <br> Enter the code below to confirm your email address.
+            </p>
+            <div id="lock" class="code-container">
+
+                <form class="form-wrap">
+                
+                    <input type="number" name="digit1" id="digit1" class="digits" min="0" max="9" minlength="1" maxlength="1" placeholder="0" required>
+                    <input type="number" name="digit2" id="digit2" class="digits" min="0" max="9" minlength="1" maxlength="1" placeholder="0" required>
+                    <input type="number" name="digit3" id="digit3" class="digits" min="0" max="9" minlength="1" maxlength="1" placeholder="0" required>
+                    <input type="number" name="digit4" id="digit4" class="digits" min="0" max="9" minlength="1" maxlength="1" placeholder="0" required>
+                    
+                    
+                  
+                    <input class="submit" type="submit">
+                </form>
+               
+                
+            </div>
+            <p>Make sure to keep this window open while checking your email for the code.</p>
+        </div>
+
+        <div id="box-two" class="box">
+            <h4>Verify your email address</h4>
+            <p class="instructions">To verify your email address, enter this code in your browser.</p>
+            <div id="key" class="code-container">2844</div>
+            <p>If you didn't request a code, you can safely ignore this email.</p>
+            <p class="help">Questions? <a href="#">We are here to help.</a></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
